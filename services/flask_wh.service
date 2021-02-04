@@ -1,0 +1,14 @@
+[Unit]
+Description=Flask Webhook
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+User=root
+PermissionsStartOnly=true
+# WorkingDirectory=/home/[username]]/[path]]/[repo]]/webhook
+ExecStart=/home/[username]]/[path]]/venv/bin/python3 /home/[username]]/[path]/[repo]/webhook/app.py
+TimeoutSec=600
+Restart=on-failure
+RuntimeDirectoryMode=755
