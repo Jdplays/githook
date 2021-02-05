@@ -7,8 +7,8 @@ WantedBy=multi-user.target
 [Service]
 User=root
 PermissionsStartOnly=true
-# WorkingDirectory=/home/[username]]/[path]]/[repo]]/webhook
-ExecStart=/home/[username]]/[path]]/venv/bin/python3 /home/[username]]/[path]/[repo]/webhook/app.py
+# WorkingDirectory=/home/[username]/[path]/webhook
+ExecStart=/home/[username]/[path]/venv/bin/python3 /home/[username]/[path]/webhook/app.py
 TimeoutSec=600
 Restart=on-failure
 RuntimeDirectoryMode=755

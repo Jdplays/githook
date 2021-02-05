@@ -6,7 +6,7 @@ print("flask_wh Stopped")
 
 # Pull the repo down
 subprocess.run(["/home/[username]/[path]/venv/bin/python3",
-                "/home/[username]]/[path]]/[repo]]/webhook/pull.py"])
+                "/home/[username]/[path]/webhook/pull.py"])
 print("Repo Pulled")
 
 # Restart server service
